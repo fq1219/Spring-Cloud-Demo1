@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config-client
+
+  cloud:
+    config:
+      uri: http://localhost:8767/
+      profile: default
+      label: master
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: 192.168.244.201
+#          defaultBrokerPort: 9092
+#          zk-nodes: 192.168.244.201
+#          efaultZkPort: 2182
+
+server:
+  port: 8768
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8671/eureka/
